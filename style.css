@@ -1,0 +1,587 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: repeating-radial-gradient(circle at center, #222 0, #222 10px, #111 10px, #111 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  color: #eee;
+}
+
+/* Card top section with pink background and diagonal shape */
+
+.top-section {
+  background: #f1a629;
+  padding: 20px 20px 60px 20px;
+  position: relative;
+  text-align: center;
+  color: #222;
+  height: 360px;
+}
+
+.top-section01 {
+   background: #f1a629;
+  position: relative;
+  text-align: center;
+  color: #222;
+  height: max-content;
+}
+
+
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #072638;
+  background: white;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+
+.top-section h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+  color: black;
+  position: relative;
+  z-index: 2;
+}
+
+
+.top-section hr {
+  width: 50px;
+  border: 1.5px solid #222;
+  margin: 0 auto 8px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.skyline {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  margin-left: 0;
+}
+.skyline svg {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  height: auto;
+}
+
+
+.founder-name {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  position: relative;
+  z-index: 2;
+}
+
+.founder-title {
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 12px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-buttons button {
+  background: #14083d;
+  border: none;
+  color: #eee;
+  padding: 6px 10px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.3s ease;
+}
+
+.contact-buttons button:hover {
+  background: #222;
+}
+
+/* Middle section with dark background */
+.middle-section {
+  background: #f1a629;
+  padding: 20px;
+  position: relative;
+  z-index: 3;
+  color: #0f0f0f;
+}
+
+/* Contact info items */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.icon-circle {
+  background: #14083d;
+  color: wheat;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* WhatsApp share input and button */
+.whatsapp-share {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.whatsapp-share input[type="text"] {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.whatsapp-btn {
+  background: #f1a629;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+  height: 45px;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe57;
+  text-decoration: none;
+}
+
+.whatsapp-btn02 {
+  background: #14083d;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+  height: 45px;
+}
+
+.whatsapp-btn02:hover {
+  background: #1ebe57;
+  text-decoration: none;
+}
+
+/* Action buttons */
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.action-buttons button {
+  background:#14083d;
+  border: none;
+  color: wheat;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.action-buttons button:hover {
+  background: #14083d;
+  text-decoration: none;
+}
+
+/* Bottom social icons */
+.bottom-section {
+  background: #2f2f2f;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bottom-section01 {
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.social-icon.facebook {
+  background: #3b5998;
+}
+
+.social-icon.facebook:hover {
+  background: #2d4373;
+}
+
+.social-icon.youtube {
+  background: #ff0000;
+}
+
+.social-icon.youtube:hover {
+  background: #cc0000;
+}
+
+.social-icon.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.social-icon.instagram:hover {
+  filter: brightness(0.85);
+}
+
+
+.aboutus{
+  background-color: #14083d;
+  text-align: left;
+  height: 40px;
+  color: white;
+}
+
+.box{
+  background-color: lightgrey;
+  width: 256px;
+  border: 3px solid #f1a629;
+  height: 256px;
+  border-radius:25px;
+  margin-left: 70px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.container02 {
+            max-width: 1200px;
+            margin-left: 90px;
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card02 {
+            background: #fff;
+            height: 320px;
+            width :200px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card02 img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .title02 {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #333;
+        }
+        .price {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #666;
+            text-align: center;
+        }
+        .price .original {
+            text-decoration: line-through;
+            margin-right: 8px;
+            color: #999;
+        }
+        .price .discounted {
+            font-weight: 700;
+            color: #2e7d32; /* green */
+        }
+        .btn-enquiry02 {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            width: 100%;
+            max-width: 200px;
+        }
+        .btn-enquiry02:hover {
+            background-color: #388e3c;
+        }
+/* Bottom navigation bar */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  padding: 6px 0;
+  font-size: 0.75rem;
+  color: #222;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.bottom-nav a {
+  color: #222;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.bottom-nav a i {
+  font-size: 1.2rem;
+}
+
+.bottom-nav a:hover {
+  color: #f1a629;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+ /* Location of the box */
+  left: 450px;
+  bottom: 50px;
+  width: 500px; /* Full width */
+  height: 500px; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  height: auto;
+  width: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border: 3px solid #f1a629;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 150px;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 1px;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  left: 1px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            resize: vertical;
+        }
+        textarea {
+            height: 100px;
+        }
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* Responsive */
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
